@@ -21,8 +21,8 @@
   --gold:#b48a3c;
   --gold-deep:#8a6626;
   --gold-hi:#e0bf74;
-  --paper:#f4ecdd;
-  --paper-2:#e8dcc4;
+  --paper:#f6f4ec;
+  --paper-2:#e7e3d3;
   --ink:#2b2117;
   --muted:#76664f;
   --f-display:"Noto Kufi Arabic","IBM Plex Sans Arabic",sans-serif;
@@ -55,16 +55,16 @@ body{background:var(--stage);color:var(--paper);font-family:var(--f-body);overfl
 .leaf.turned .face.front{visibility:hidden}
 .noanim .face{transition:none!important}
 .face.l::after,.face.r::after{content:"";position:absolute;top:0;bottom:0;width:12%;pointer-events:none;z-index:5}
-.face.l::after{right:0;background:linear-gradient(to left, rgba(60,40,10,.14), rgba(0,0,0,0))}
-.face.r::after{left:0;background:linear-gradient(to right, rgba(60,40,10,.14), rgba(0,0,0,0))}
+.face.l::after{right:0;background:linear-gradient(to left, rgba(40,36,20,.12), rgba(0,0,0,0))}
+.face.r::after{left:0;background:linear-gradient(to right, rgba(40,36,20,.12), rgba(0,0,0,0))}
 .blankpaper{position:absolute;inset:0;background:var(--paper-2)}
 
 /* ---------- Page ---------- */
 #src{display:none}
 .pg{position:absolute;inset:0;color:var(--ink);direction:rtl;text-align:right;
   background:
-    radial-gradient(120% 75% at 0% 0%, #fdf9f1 0%, rgba(253,249,241,0) 55%),
-    radial-gradient(90% 70% at 100% 100%, #e6d7b8 0%, rgba(230,215,184,0) 62%),
+    radial-gradient(120% 75% at 0% 0%, #fefefb 0%, rgba(254,254,251,0) 55%),
+    radial-gradient(90% 70% at 100% 100%, #e8e1c8 0%, rgba(232,225,200,0) 62%),
     var(--paper);
   padding:2.4em 2.2em 1.9em;box-sizing:border-box;display:flex;flex-direction:column;gap:.75em}
 .pg::before{content:"";position:absolute;inset:.85em;border:1px solid color-mix(in srgb, var(--gold) 55%, transparent);pointer-events:none;z-index:1}
@@ -153,7 +153,7 @@ p{margin:0;font-size:.7em;line-height:1.9;text-align:justify}
 
 /* contact */
 .contacts{display:flex;flex-direction:column;gap:.55em;margin-top:.3em}
-.ct{position:relative;z-index:6;display:flex;align-items:center;gap:.6em;padding:.55em .7em;border:1px solid color-mix(in srgb,var(--gold) 35%,transparent);border-radius:.4em;background:color-mix(in srgb,#fffaf0 55%,transparent)}
+.ct{position:relative;z-index:6;display:flex;align-items:center;gap:.6em;padding:.55em .7em;border:1px solid color-mix(in srgb,var(--gold) 35%,transparent);border-radius:.4em;background:color-mix(in srgb,#ffffff 60%,transparent)}
 .ct.women{background:color-mix(in srgb,var(--gold) 12%,transparent);border-color:color-mix(in srgb,var(--gold) 60%,transparent)}
 .ct .num{font-family:var(--f-label);font-weight:700;font-size:1em;color:var(--ink);direction:ltr;user-select:text;-webkit-user-select:text;font-variant-numeric:tabular-nums;letter-spacing:.05em}
 .ct .who{flex:1;min-width:0;font-size:.62em;color:var(--muted);line-height:1.4}
